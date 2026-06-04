@@ -6,6 +6,7 @@ int startTime = 0;
 int lastTime=0;
 int delta;
 SoundFile file;
+String filename = "nausicaa.mp3";
 ArrayList<FallingSprite> onDisp;
 int score = 0;
 String csvTimes = "";
@@ -20,7 +21,7 @@ void setup() {
   }
   //prepNotes("notes.csv");
   frameRate(30);
-  file = new SoundFile(this, "nausicaa.mp3");
+  file = new SoundFile(this, filename);
   file.play();
   startTime = millis();
 }
